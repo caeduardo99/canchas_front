@@ -1,0 +1,7 @@
+{
+  "name": "canchas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
