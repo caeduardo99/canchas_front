@@ -1,27 +1,48 @@
-#container {
-  text-align: center;
+/* Ninguna de las imagenes son de mi propiedad, a continuación están los links de los autores
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+Imágenes en Unsplash: https://unsplash.com/@xps
+Logo Dell: https://worldvectorlogo.com/logo/dell-1
+
+*/
+
+:root {
+  --dark: #16191C;
+  --dark-x: #1E2126; 
+  --light: #ffffff;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+body {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+.text-light { color:#ffffff !important; }
+.bg-dark { background-color:#16191C !important; }
+.bg-dark-x { background-color:  #1E2126; }
 
-  color: #8c8c8c;
-
-  margin: 0;
+.btn {
+  min-height: 3.125rem;
+  font-weight: 600;
 }
 
-#container a {
-  text-decoration: none;
+.form-control {
+  min-height: 3.125rem;
+  line-height: initial;
+}
+.form-control:focus {
+  background-color: var(--dark-x);
+  outline: none;
+}
+
+.img-1 {
+  // background-image: url('img-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.img-2 {
+  // background-image: url('img-2.jpg');
+  background-size: cover;
+  background-position: center;
 }
