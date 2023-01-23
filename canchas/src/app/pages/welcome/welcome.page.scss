@@ -1,0 +1,114 @@
+ion-content{
+    --background: #e0dfe6;
+
+    #header{
+        height: 50%;
+        background: linear-gradient(236.07deg,#f7ab35 .09%,#e8521e 102.47%);
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        border-radius: 0px 0px 20px 20px;
+
+        #app-bar{
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 16px;
+
+            ion-icon{
+                font-size: 24px;
+                margin-left: -5px;
+            }
+        }
+
+        #logo{
+            width: 90px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            align-self: center;
+            margin-top: 2%;
+
+            img{
+                width: 70%;
+            }
+        }
+        h2{
+            text-align: center;
+            font-weight: bold;
+            margin: 0;
+            font-size: 19px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+    }
+
+    ion-card{
+        box-shadow: none;
+        position: absolute;
+        top: 37%;
+        left: 5%;
+        right: 5%;
+        border-radius: 20px;
+
+        h1{
+            font-weight: bold;
+            font-size: 19px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        p{
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 45px;
+        }
+    }
+    .line-text{
+        padding:2px;
+        position: relative;
+        height: 20px;
+        margin-top: 40px;
+
+        .lines{
+            height: 1px;
+            background: #858585;
+            display: block;
+          }
+        .text{
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translate(-50%);
+            background: #ffffff;
+            padding: 0 15px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #565656;
+        }
+    }
+    .socials{
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+
+          ion-button{
+            margin: 0 5px;
+            --padding-start:12px;
+            --padding-end:12px;
+
+              ion-icon{
+                font-size: 18px;
+              }
+          }
+        .btn-fb{
+          --background: #567aa3;
+        }
+        .btn-gg{
+            --background: #fd684f;
+          }    
+      }
+}
