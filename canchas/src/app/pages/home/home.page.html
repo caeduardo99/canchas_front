@@ -34,8 +34,11 @@
     <!-- Categorias -->
     <div class="list-title">
         <h3 class="title">Categorias</h3>
-
     </div>
-
+    <ion-slides>
+      <ion-slide *ngFor="let item of canchas">
+        <app-canchas-item [item]="item"></app-canchas-item>
+      </ion-slide>
+    </ion-slides>
 </ion-content>
 
