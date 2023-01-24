@@ -1,5 +1,5 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
-import * as EventEmitter from 'events';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
 import { Product } from 'src/app/pages/models/product.model';
 
 @Component({
@@ -8,9 +8,9 @@ import { Product } from 'src/app/pages/models/product.model';
   styleUrls: ['./product-card.component.scss'],
 })
 export class ProductCardComponent implements OnInit {
-  @Input() item!: Product
+  @Input() item!: Product;
 
-  @Output() clicked =new EventEmitter();
+  @Output() clicked = new EventEmitter();
   constructor() { }
 
   ngOnInit() {}

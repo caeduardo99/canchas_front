@@ -1,0 +1,31 @@
+<ion-content>
+<div class="header">
+  <ion-buttons slot="start">
+    <ion-button routerLink="/home">
+      <ion-icon slot="icon-only" color="ligth" name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-buttons>
+    <ion-button>
+      <ion-icon slot="icon-only" color="ligth" name="d-heart"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</div>
+
+<!-- Product detalle -->
+<div class="card">
+  <div class="image">
+    <ion-img [src]="product.image"></ion-img>
+  </div>
+
+  <div class="card-content">
+    <div class="card-title">
+      <h1 class="ion-no-margin">{{product.name}}</h1>
+      <p class="ion-no-margin"><sup>$</sup> {{product.price | number:'1.2' }}</p>
+    </div>
+  </div>
+  <div class="about"></div>  
+  <h1>Detalles</h1>
+  <p>{{product.ubication}}</p>
+</div>
+</ion-content>

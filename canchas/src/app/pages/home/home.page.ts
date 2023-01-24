@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CanchasService } from 'src/app/services/canchas.service';
 import { ProductService } from 'src/app/services/product.service';
 import { Canchas } from '../models/canchas.model';
@@ -22,12 +23,15 @@ export class HomePage implements OnInit {
 
   constructor(
     private canchasService: CanchasService ,
-    private productService: ProductService
+    private productService: ProductService,
+    private router: Router,
     ) {}
 
   ngOnInit(){
     this.canchas = this.canchasService.getAll();
     this.products = this.productService.getAll();
   }
-  
+  goToDetailPage(id: number){
+    this.router.navigate(['detail',id])
+  }
 }

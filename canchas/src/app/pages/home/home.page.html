@@ -1,24 +1,14 @@
 <ion-content class="ion-padding">
     <div id="header" class="ion-margin-bottom">
-        <ion-icon id="menu-icon" name="grid-outline"></ion-icon>
-            <div id="location">
-              <ion-icon name="location"></ion-icon>
-              <h4 class="ion-no-margin">Cuenca</h4>
-            </div>
-            <div id="avatar">
-                <ion-icon name="person-circle-outline"></ion-icon>
-            </div>
+      <ion-icon id="menu-icon" name="grid-outline"></ion-icon>
+      <div id="location">
+        <ion-icon name="paper-plane"></ion-icon>
+        <h4 class="ion-no-margin">Cuenca</h4>
+      </div>
+      <div id="avatar">
+                <ion-img src="/assets/img/perfil.jpg"></ion-img>
+      </div>
     </div>
-    <!-- Ciudad -->
-    <!-- <ion-list>
-        <ion-item>
-          <ion-select placeholder="Select fruit">
-            <ion-select-option value="apples">Cuenca</ion-select-option>
-            <ion-select-option value="oranges">Machala</ion-select-option>
-            <ion-select-option value="bananas">Guayaquil</ion-select-option>
-          </ion-select>
-        </ion-item>
-      </ion-list>       -->
     <!-- Busqueda -->   
     <ion-searchbar></ion-searchbar>
     <!-- banner -->
@@ -42,7 +32,7 @@
     </div>
 
     <div class="product-list">
-      <app-product-card *ngFor="let item of products" [item]="item"  ></app-product-card>
+      <app-product-card *ngFor="let item of products" [item]="item" (clicked)="goToDetailPage(item.id)"  ></app-product-card>
     </div>
 </ion-content>
 

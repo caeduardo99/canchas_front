@@ -19,13 +19,20 @@ export class ProductService{
                 ubication: 'Presidente Rocafuerte y Garcia Moreno',
                 price:22.99,
                 name:'Totoracocha',
-                image: '/assets/img/canchaprincipal.png'
+                image: '/assets/img/cancha2.png'
+            },
+            {
+                id:3,
+                ubication: 'Av del Estadio 2-20',
+                price:15.00,
+                name:'Estadio',
+                image: '/assets/img/cancha3.png'
             },
             
         ];
     }
 
-    getById(id:number): Product {
+    getProduct(id:number): Product {
         return this.getAll().find((item) => item.id == id)!;
     }
 }
