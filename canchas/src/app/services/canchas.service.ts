@@ -6,8 +6,11 @@ import { Injectable } from "@angular/core";
 export class CanchasService{
     getAll(){
         return[
-            {name: 'Sect', image: '/assets/img/cancha.png'},
-            
-        ]
+            {name: 'Norte', image: '/assets/img/ubicacion.png'},
+            {name: 'Centro', image: '/assets/img/ubicacion.png'},
+            {name: 'Sur', image: '/assets/img/ubicacion.png'},
+          
+
+        ];
     }
 }

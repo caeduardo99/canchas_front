@@ -5,7 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { CanchasItemModule } from 'src/app/services/canchas.service';
+import { CanchasItemModule } from 'src/app/components/canchas-item/canchas-item.module';
+import { ProdutCardModule } from 'src/app/components/product-card/product-card.module';
+
 
 
 @NgModule({
@@ -15,6 +17,7 @@ import { CanchasItemModule } from 'src/app/services/canchas.service';
     IonicModule,
     HomePageRoutingModule,
     CanchasItemModule,
+    ProdutCardModule,
   ],
   declarations: [HomePage]
 })

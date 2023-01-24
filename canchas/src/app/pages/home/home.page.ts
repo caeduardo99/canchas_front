@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CanchasService } from 'src/app/services/canchas.service';
+import { ProductService } from 'src/app/services/product.service';
 import { Canchas } from '../models/canchas.model';
+import { Product } from '../models/product.model';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +11,23 @@ import { Canchas } from '../models/canchas.model';
 })
 export class HomePage implements OnInit {
   canchas!: Canchas[];
+  products!: Product[];
   
-  constructor(private canchasService: CanchasService) {}
+  slidesOptions = {
+    initialSlide: 0,
+    spaceBetween: 0,
+    slidesPerView: 4.2,
+    slidesOffsetBefore: 0,
+  };
+
+  constructor(
+    private canchasService: CanchasService ,
+    private productService: ProductService
+    ) {}
 
   ngOnInit(){
     this.canchas = this.canchasService.getAll();
+    this.products = this.productService.getAll();
   }
+  
 }

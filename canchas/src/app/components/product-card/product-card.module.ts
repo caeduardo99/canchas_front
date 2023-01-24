@@ -2,14 +2,15 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { IonicModule } from "@ionic/angular";
-import { CanchasItemComponent } from "./canchas-item.component";
+import { ProductCardComponent } from "./product-card.component";
+
 
 
 @NgModule({
-    declarations: [CanchasItemComponent],
+    declarations: [ProductCardComponent],
     imports: [CommonModule,IonicModule],
-    exports: [CanchasItemComponent],
+    exports: [ProductCardComponent],
     
 })
 
-export class CanchasItemModule{}
+export class ProdutCardModule{}
